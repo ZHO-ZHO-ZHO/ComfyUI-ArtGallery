@@ -143,8 +143,8 @@ class ArtGallery_Zho:
         artist = get_prompt(self.artist_data, artist)
         camera = get_prompt(self.camera_data, camera)
 
-        artist_full_image_path = get_img_path(artist)
-        camera_full_image_path = get_img_path(camera)
+        artist_full_image_path = get_img_path(artist, artists)
+        camera_full_image_path = get_img_path(camera, cameras)
 
         prompt = []
 
