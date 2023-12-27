@@ -8,6 +8,59 @@ import numpy as np
 import safetensors.torch
 
 
+def read_json_file(file_path):
+    try:
+        # Open file, load JSON content into python dictionary, and return it.
+        with open(file_path, 'r', encoding='utf-8') as file:
+            json_data = json.load(file)
+            return json_data
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
+
+
+def get_name(json_data):
+    # Check that data is a list
+    if not isinstance(json_data, list):
+        print("Error: input data must be a list")
+        return None
+
+    names = []
+
+    # Iterate over each item in the data list
+    for item in json_data:
+        # Check that the item is a dictionary
+        if isinstance(item, dict):
+            # Check that 'name' is a key in the dictionary
+            if 'name' in item:
+                # Append the value of 'name' to the names list
+                names.append(item['name'])
+
+    return names
+
+def get_prompt(json_data, template_name):
+    try:
+        # Check if json_data is a list
+        if not isinstance(json_data, list):
+            raise ValueError("Invalid JSON data. Expected a list of templates.")
+            
+        for template in json_data:
+            # Check if template contains 'name' and 'tags' fields
+            if 'name' not in template or 'tags' not in template:
+                raise ValueError("Invalid template. Missing 'name' or 'tags' field.")
+            
+            if template['name'] == template_name:
+                name = template.get('name', "")
+                tags = template.get('tags', "")
+                print("Extracted tags:", tags)
+                return name
+
+        # If function hasn't returned yet, no matching template was found
+        raise ValueError(f"No template found with name '{template_name}'.")
+
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
+        
+
 def get_img_path(template_name, template_type):
     p = os.path.dirname(os.path.realpath(__file__))
     # 根据操作系统选择合适的分隔符
@@ -24,6 +77,90 @@ def get_img_path(template_name, template_type):
     full_image_path = image_path + separator + image_filename
 
     return full_image_path
+
+
+class ArtGallery_Zho:
+
+    def __init__(self):
+        pass
+
+    @classmethod
+    def INPUT_TYPES(self):
+        # Get current file's directory
+        p = os.path.dirname(os.path.realpath(__file__))
+
+        # Paths for various JSON files
+        artist_file_path = os.path.join(p, 'lists/artists/artist_list.json')
+        camera_file_path = os.path.join(p, 'lists/cameras/camera_list.json')
+
+        # Read JSON from file
+        self.artist_data = read_json_file(artist_file_path)
+        self.camera_data = read_json_file(camera_file_path)
+
+        # Retrieve name from JSON data
+        artist_list = get_name(self.artist_data)
+        artist_list = ['-'] + artist_list
+        camera_list = get_name(self.camera_data)
+        camera_list = ['-'] + camera_list
+
+        # Paths for various image files
+        #artist_image_path = os.path.join(p, 'img_lists/artists/')
+
+        max_float_value = 1.75
+
+        return {
+            "required": {
+                "artist": (artist_list, {
+                    "default": artist_list[0],
+                }),
+                "artist_weight": ("FLOAT", {
+                    "default": 1.5,
+                    "step": 0.05,
+                    "min": 0,
+                    "max": max_float_value,
+                    "display": "slider",
+                }),
+                "camera": (camera_list, {
+                    "default": camera_list[0],
+                }),
+                "camera_weight": ("FLOAT", {
+                    "default": 1.5,
+                    "step": 0.05,
+                    "min": 0,
+                    "max": max_float_value,
+                    "display": "slider",
+                }),
+            }
+        }
+
+    RETURN_TYPES = ("STRING","STRING","STRING",)
+    RETURN_NAMES = ("prompt","artist","camera",)
+    FUNCTION = "artgallery"
+    CATEGORY = "Zho模块组/🎨 ArtGallery 艺术画廊"
+
+    def artgallery(self, artist="-", artist_weight=1, camera="-", camera_weight=1):
+
+        artist = get_prompt(self.artist_data, artist)
+        camera = get_prompt(self.camera_data, camera)
+
+        artist_full_image_path = get_img_path(artist)
+        camera_full_image_path = get_img_path(camera)
+
+        prompt = []
+
+
+        if artist != "-" and artist_weight > 0:
+            P_artist = f"({artist}:{round(artist_weight, 2)})"
+            prompt.append(P_artist)
+
+        if camera != "-" and camera_weight > 0:
+            P_camera = f"({camera}:{round(camera_weight, 2)})"
+            prompt.append(P_camera)
+
+        prompt = ", ".join(prompt)
+        prompt = prompt.lower()
+
+        return (prompt, P_artist, P_camera,)
 
 
 class ArtistsImage_Zho:
@@ -401,6 +538,7 @@ class StylesImage_Zho:
 
 
 NODE_CLASS_MAPPINGS = {
+    "ArtGallery_Zho": ArtGallery_Zho,
     "ArtistsImage_Zho": ArtistsImage_Zho,
     "CamerasImage_Zho": CamerasImage_Zho,
     "FilmsImage_Zho": FilmsImage_Zho,
@@ -410,6 +548,7 @@ NODE_CLASS_MAPPINGS = {
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
+    "ArtGallery_Zho": "🎨 ArtGallery_Zho",
     "ArtistsImage_Zho": "🎨 ArtistsGallery_Zho",
     "CamerasImage_Zho": "🎨 CamerasGallery_Zho",
     "FilmsImage_Zho": "🎨 FilmsGallery_Zho",
