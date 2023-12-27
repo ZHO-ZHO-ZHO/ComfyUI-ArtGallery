@@ -1,0 +1,20 @@
+[
+    {
+        "name": "A. J. Casson",
+        "tags": [
+            "impressionism"
+        ]
+    },
+    {
+        "name": "Aaron Blaise",
+        "tags": [
+            "animation"
+        ]
+    },
+    {
+        "name": "Aaron Douglas",
+        "tags": [
+            "expressionism"
+        ]
+    }
+]
