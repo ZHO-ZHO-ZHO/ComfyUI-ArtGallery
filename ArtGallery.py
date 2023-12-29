@@ -72,7 +72,7 @@ def get_img_path(template_name, template_type):
         separator = '/'  # 默认使用斜杠作为分隔符
 
     image_path = os.path.join(p, 'img_lists', template_type)  # 使用适当的分隔符构建路径
-    image_filename = f"{template_name}.jpg"
+    image_filename = f"{template_name}.png"
 
     full_image_path = image_path + separator + image_filename
 
