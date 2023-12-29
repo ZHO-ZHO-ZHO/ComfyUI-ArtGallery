@@ -40,6 +40,15 @@ prompt & img(for now , when finished, will be replaced to my own img) from https
 非常感谢 Rikkar 的大量测试！！！
 
 
+
+## 更新日志
+
+- 20231229
+    完成 camera、film、movement、style 的全部测试，已替换为自己的图像
+
+- 20231228
+    创建项目
+
 credits
 
 Thanks to the artist Rikkar for his incredible work!!!
