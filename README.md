@@ -4,8 +4,31 @@
 # ComfyUI ArtGallery（WIP）
 ## Prompt Visualization | Prompt Master of Art | Art Gallery
 
-https://github.com/ZHO-ZHO-ZHO/ComfyUI-ArtGallery/assets/140084057/8983390d-4c41-4dad-9271-46067e8c9337
 
+![image](https://github.com/ZHO-ZHO-ZHO/ComfyUI-ArtGallery/assets/140084057/c03ebcb1-7e01-42f2-beed-7462b1888e04)
+
+
+https://github.com/ZHO-ZHO-ZHO/ComfyUI-ArtGallery/assets/140084057/06aa5a58-bedf-4351-a103-d62469b9ae33
+
+
+## 预览
+
+Artists | 艺术家：280位（从5000+中精选出来）
+
+Movements | 艺术运动：140种
+
+Styles | 艺术媒介：115种
+
+Films | 胶片：83种
+
+Cameras | 镜头：47种
+
+已全部替换为自己的测试图，并精选了280位艺术家（图像还在上传中）
+
+## 简介（还在完善中）
+<!---
+https://github.com/ZHO-ZHO-ZHO/ComfyUI-ArtGallery/assets/140084057/8983390d-4c41-4dad-9271-46067e8c9337
+--->
 I am trying to visualize the selection of prompts: 
 
 Choosing prompts has never really been suitable for humans, especially when there are a lot of prompts to choose from. 
@@ -20,10 +43,10 @@ I am testing the integration of thousands of different categories of art prompts
 The initial version is already usable, but I am still working on further optimization.
 
 Currently, all five major categories have been implemented, and when you select a name, you will directly see the corresponding image on the node.
-
+<!---
 ![Dingtalk_20231228030726](https://github.com/ZHO-ZHO-ZHO/ComfyUI-ArtGallery/assets/140084057/2a18c545-ed56-4261-a631-31bfea39e2f4)
-
-prompt & img(for now , when finished, will be replaced to my own img) from https://rikkar69.github.io/SDXL-artist-study/
+--->
+prompt from https://rikkar69.github.io/SDXL-artist-study/
 
 我正在尝试把提示词可视化：
 
@@ -35,7 +58,7 @@ prompt & img(for now , when finished, will be replaced to my own img) from https
 
 目前5大分类的节点均已实现，当你选择名称时你会在节点上直接看到对应的图
 
-目前还用的是 Rikkar 测试的原图，不过我正在做测试，很快就会换成我自己的图
+已换为自己的测试图
 
 非常感谢 Rikkar 的大量测试！！！
 
@@ -43,10 +66,16 @@ prompt & img(for now , when finished, will be replaced to my own img) from https
 
 ## 更新日志
 
+- 20231230
+
+  已全部替换为自己的测试图，并精选了280位艺术家，图像库暂时还未上传完
+
 - 20231229
+  
     完成 camera、film、movement、style 的全部测试，已替换为自己的图像
 
 - 20231228
+  
     创建项目
 
 credits
