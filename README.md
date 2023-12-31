@@ -1,5 +1,9 @@
-
+<!---
 ![AG项目图](https://github.com/ZHO-ZHO-ZHO/ComfyUI-ArtGallery/assets/140084057/ef8ea90e-16a9-4882-8545-8fbceea39ca6)
+--->
+
+![artgallery新项目图](https://github.com/ZHO-ZHO-ZHO/ComfyUI-ArtGallery/assets/140084057/e7f2fde4-d138-4f32-80d1-50cda798992a)
+
 
 # ComfyUI ArtGallery（WIP）
 ## Prompt Visualization | Prompt Master of Art | Art Gallery
