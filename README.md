@@ -15,7 +15,7 @@ https://github.com/ZHO-ZHO-ZHO/ComfyUI-ArtGallery/assets/140084057/06aa5a58-bedf
 
 Artists | 艺术家：280位（从5000+中精选出来）
 
-Movements | 艺术运动：140种
+Movements | 艺术运动：138种（去除了NSFW）
 
 Styles | 艺术媒介：115种
 
