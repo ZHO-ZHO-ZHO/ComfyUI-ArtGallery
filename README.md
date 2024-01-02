@@ -6,7 +6,7 @@
 
 
 # ComfyUI ArtGallery（WIP）
-## Prompt Visualization | Prompt Master of Art | Art Gallery
+## Prompt Visualization | Art Gallery
 
 
 ![image](https://github.com/ZHO-ZHO-ZHO/ComfyUI-ArtGallery/assets/140084057/c03ebcb1-7e01-42f2-beed-7462b1888e04)
@@ -96,4 +96,4 @@ Thanks to the artist Rikkar for his incredible work!!!
 
 https://twitter.com/socalpathy
 
-https://github.com/rikkar69/SDXL-artist-study/tree/master/data/lists
+https://github.com/rikkar69/SDXL-artist-study
