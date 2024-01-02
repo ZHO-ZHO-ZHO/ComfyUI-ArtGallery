@@ -9,8 +9,12 @@
 ## Prompt Visualization | Art Gallery
 
 
-![image](https://github.com/ZHO-ZHO-ZHO/ComfyUI-ArtGallery/assets/140084057/c03ebcb1-7e01-42f2-beed-7462b1888e04)
+![ArtGallery](https://github.com/ZHO-ZHO-ZHO/ComfyUI-ArtGallery/assets/140084057/bd3673b6-16b0-46ee-92ee-6b5ebf446bb5)
 
+
+<!---
+![image](https://github.com/ZHO-ZHO-ZHO/ComfyUI-ArtGallery/assets/140084057/c03ebcb1-7e01-42f2-beed-7462b1888e04)
+--->
 
 https://github.com/ZHO-ZHO-ZHO/ComfyUI-ArtGallery/assets/140084057/06aa5a58-bedf-4351-a103-d62469b9ae33
 
