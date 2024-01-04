@@ -1,0 +1,1309 @@
+{
+  "last_node_id": 36,
+  "last_link_id": 61,
+  "nodes": [
+    {
+      "id": 3,
+      "type": "KSampler",
+      "pos": [
+        374.7364443391811,
+        638.7270185076703
+      ],
+      "size": [
+        240,
+        270
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 1
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 4
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 6
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            7
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        473649764133769,
+        "randomize",
+        20,
+        8,
+        "euler",
+        "normal",
+        1
+      ]
+    },
+    {
+      "id": 23,
+      "type": "Any Switch (rgthree)",
+      "pos": [
+        624.7364443391808,
+        908.7270185076699
+      ],
+      "size": [
+        170,
+        110
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "any_01",
+          "type": "STRING",
+          "link": 40,
+          "dir": 3
+        },
+        {
+          "name": "any_02",
+          "type": "STRING",
+          "link": 41,
+          "dir": 3
+        },
+        {
+          "name": "any_03",
+          "type": "STRING",
+          "link": 27,
+          "dir": 3
+        },
+        {
+          "name": "any_04",
+          "type": "STRING",
+          "link": 42,
+          "dir": 3
+        },
+        {
+          "name": "any_05",
+          "type": "STRING",
+          "link": 43,
+          "dir": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "type": "STRING",
+          "links": [
+            47
+          ],
+          "shape": 3,
+          "dir": 4,
+          "slot_index": 0,
+          "label": "STRING"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Any Switch (rgthree)"
+      }
+    },
+    {
+      "id": 22,
+      "type": "ConcatText_Zho",
+      "pos": [
+        624.7364443391808,
+        868.7270185076703
+      ],
+      "size": {
+        "0": 210,
+        "1": 50
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_1",
+          "type": "STRING",
+          "link": 23,
+          "widget": {
+            "name": "text_1"
+          }
+        },
+        {
+          "name": "text_2",
+          "type": "STRING",
+          "link": 22,
+          "widget": {
+            "name": "text_2"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            40
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ConcatText_Zho"
+      },
+      "widgets_values": [
+        "",
+        "girl in a rose park"
+      ]
+    },
+    {
+      "id": 21,
+      "type": "ConcatText_Zho",
+      "pos": [
+        624.7364443391808,
+        828.7270185076703
+      ],
+      "size": {
+        "0": 210,
+        "1": 50
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_1",
+          "type": "STRING",
+          "link": 19,
+          "widget": {
+            "name": "text_1"
+          }
+        },
+        {
+          "name": "text_2",
+          "type": "STRING",
+          "link": 20,
+          "widget": {
+            "name": "text_2"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            23,
+            41
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ConcatText_Zho"
+      },
+      "widgets_values": [
+        "",
+        "girl in a rose park"
+      ]
+    },
+    {
+      "id": 20,
+      "type": "ConcatText_Zho",
+      "pos": [
+        624.7364443391808,
+        788.7270185076703
+      ],
+      "size": {
+        "0": 210,
+        "1": 50
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_1",
+          "type": "STRING",
+          "link": 16,
+          "widget": {
+            "name": "text_1"
+          }
+        },
+        {
+          "name": "text_2",
+          "type": "STRING",
+          "link": 17,
+          "widget": {
+            "name": "text_2"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            19,
+            27
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ConcatText_Zho"
+      },
+      "widgets_values": [
+        "",
+        "girl in a rose park"
+      ]
+    },
+    {
+      "id": 18,
+      "type": "ConcatText_Zho",
+      "pos": [
+        624.7364443391808,
+        748.7270185076703
+      ],
+      "size": [
+        210,
+        50
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_1",
+          "type": "STRING",
+          "link": 14,
+          "widget": {
+            "name": "text_1"
+          }
+        },
+        {
+          "name": "text_2",
+          "type": "STRING",
+          "link": 15,
+          "widget": {
+            "name": "text_2"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            16,
+            42
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ConcatText_Zho"
+      },
+      "widgets_values": [
+        "",
+        "girl in a rose park"
+      ]
+    },
+    {
+      "id": 8,
+      "type": "VAEDecode",
+      "pos": [
+        624.7364443391808,
+        638.7270185076703
+      ],
+      "size": [
+        210,
+        70
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 7
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 8
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            10
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      }
+    },
+    {
+      "id": 16,
+      "type": "StylesImage_Zho",
+      "pos": [
+        1314.73644433918,
+        948.7270185076693
+      ],
+      "size": [
+        460,
+        560
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "name",
+          "type": "STRING",
+          "links": [
+            22,
+            34,
+            39
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "StylesImage_Zho"
+      },
+      "widgets_values": [
+        "Collage.png",
+        1.4000000000000001
+      ]
+    },
+    {
+      "id": 25,
+      "type": "Fast Bypasser (rgthree)",
+      "pos": {
+        "0": 374.7364196777344,
+        "1": 2258.72705078125,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        460,
+        250
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "🎨 ArtistsGallery_Zho",
+          "type": "*",
+          "link": 35,
+          "dir": 3
+        },
+        {
+          "name": "🎨 CamerasGallery_Zho",
+          "type": "*",
+          "link": 36,
+          "dir": 3
+        },
+        {
+          "name": "🎨 FilmsGallery_Zho",
+          "type": "*",
+          "link": 37,
+          "dir": 3
+        },
+        {
+          "name": "🎨 MovementsGallery_Zho",
+          "type": "*",
+          "link": 38,
+          "dir": 3
+        },
+        {
+          "name": "🎨 StylesGallery_Zho",
+          "type": "*",
+          "link": 39,
+          "dir": 3
+        },
+        {
+          "name": "",
+          "type": "*",
+          "link": null,
+          "dir": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null,
+          "dir": 4
+        }
+      ],
+      "properties": {},
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 11,
+      "type": "ArtistsImage_Zho",
+      "pos": [
+        844.7364443391808,
+        348.7270185076706
+      ],
+      "size": [
+        460,
+        560
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "name",
+          "type": "STRING",
+          "links": [
+            14,
+            30,
+            35,
+            43
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ArtistsImage_Zho"
+      },
+      "widgets_values": [
+        "Chesley Bonestell.png",
+        1.2
+      ]
+    },
+    {
+      "id": 24,
+      "type": "Fast Muter (rgthree)",
+      "pos": {
+        "0": 374.7364196777344,
+        "1": 1968.727294921875,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        460,
+        250
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "🎨 ArtistsGallery_Zho",
+          "type": "*",
+          "link": 30,
+          "dir": 3
+        },
+        {
+          "name": "🎨 CamerasGallery_Zho",
+          "type": "*",
+          "link": 31,
+          "dir": 3
+        },
+        {
+          "name": "🎨 FilmsGallery_Zho",
+          "type": "*",
+          "link": 32,
+          "dir": 3
+        },
+        {
+          "name": "🎨 MovementsGallery_Zho",
+          "type": "*",
+          "link": 33,
+          "dir": 3
+        },
+        {
+          "name": "🎨 StylesGallery_Zho",
+          "type": "*",
+          "link": 34,
+          "dir": 3
+        },
+        {
+          "name": "",
+          "type": "*",
+          "link": null,
+          "dir": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null,
+          "dir": 4
+        }
+      ],
+      "properties": {},
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 13,
+      "type": "CamerasImage_Zho",
+      "pos": [
+        1314.73644433918,
+        348.7270185076706
+      ],
+      "size": [
+        460,
+        560
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "name",
+          "type": "STRING",
+          "links": [
+            15,
+            31,
+            36
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CamerasImage_Zho"
+      },
+      "widgets_values": [
+        "Olympus Tough TG-6 with Built-in 4.5-18mm f-2-4.9.png",
+        0.78
+      ]
+    },
+    {
+      "id": 14,
+      "type": "FilmsImage_Zho",
+      "pos": [
+        374.7364443391811,
+        948.7270185076693
+      ],
+      "size": [
+        460,
+        560
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "name",
+          "type": "STRING",
+          "links": [
+            17,
+            32,
+            37
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FilmsImage_Zho"
+      },
+      "widgets_values": [
+        "Kodak Ektar 100.png",
+        1.11
+      ]
+    },
+    {
+      "id": 15,
+      "type": "MovementsImage_Zho",
+      "pos": [
+        844.7364443391808,
+        948.7270185076693
+      ],
+      "size": [
+        460,
+        560
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "name",
+          "type": "STRING",
+          "links": [
+            20,
+            33,
+            38
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MovementsImage_Zho"
+      },
+      "widgets_values": [
+        "Cubism.png",
+        0.4
+      ]
+    },
+    {
+      "id": 26,
+      "type": "DisplayText_Zho",
+      "pos": [
+        374.7364443391811,
+        1758.7270185076684
+      ],
+      "size": [
+        460,
+        170
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 48,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DisplayText_Zho"
+      },
+      "widgets_values": [
+        "",
+        "(Chesley Bonestell:1.2), girl in a rose park"
+      ]
+    },
+    {
+      "id": 29,
+      "type": "ConcatText_Zho",
+      "pos": [
+        374.7364443391811,
+        1548.7270185076684
+      ],
+      "size": [
+        460,
+        170
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_1",
+          "type": "STRING",
+          "link": 47,
+          "widget": {
+            "name": "text_1"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            48,
+            49
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ConcatText_Zho"
+      },
+      "widgets_values": [
+        "",
+        "girl in a rose park"
+      ]
+    },
+    {
+      "id": 7,
+      "type": "CLIPTextEncode",
+      "pos": [
+        624.7364443391808,
+        488.72701850767044
+      ],
+      "size": [
+        210,
+        110
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 5
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            6
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "text, watermark"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        374.7364443391811,
+        348.7270185076706
+      ],
+      "size": [
+        240,
+        100
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            1
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            3,
+            5
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            8
+          ],
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "XXMix_9realisticSDXL.safetensors"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "EmptyLatentImage",
+      "pos": [
+        374.7364443391811,
+        488.72701850767044
+      ],
+      "size": [
+        240,
+        110
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            2
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ]
+    },
+    {
+      "id": 6,
+      "type": "CLIPTextEncode",
+      "pos": [
+        624.7364443391808,
+        348.7270185076706
+      ],
+      "size": [
+        210,
+        100
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 3
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 49,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            4
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "art\n"
+      ]
+    },
+    {
+      "id": 10,
+      "type": "PreviewImage",
+      "pos": [
+        845,
+        1549
+      ],
+      "size": [
+        930,
+        960
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 10
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    }
+  ],
+  "links": [
+    [
+      1,
+      4,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      2,
+      5,
+      0,
+      3,
+      3,
+      "LATENT"
+    ],
+    [
+      3,
+      4,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      4,
+      6,
+      0,
+      3,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      5,
+      4,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      6,
+      7,
+      0,
+      3,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      7,
+      3,
+      0,
+      8,
+      0,
+      "LATENT"
+    ],
+    [
+      8,
+      4,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      10,
+      8,
+      0,
+      10,
+      0,
+      "IMAGE"
+    ],
+    [
+      14,
+      11,
+      0,
+      18,
+      0,
+      "STRING"
+    ],
+    [
+      15,
+      13,
+      0,
+      18,
+      1,
+      "STRING"
+    ],
+    [
+      16,
+      18,
+      0,
+      20,
+      0,
+      "STRING"
+    ],
+    [
+      17,
+      14,
+      0,
+      20,
+      1,
+      "STRING"
+    ],
+    [
+      19,
+      20,
+      0,
+      21,
+      0,
+      "STRING"
+    ],
+    [
+      20,
+      15,
+      0,
+      21,
+      1,
+      "STRING"
+    ],
+    [
+      22,
+      16,
+      0,
+      22,
+      1,
+      "STRING"
+    ],
+    [
+      23,
+      21,
+      0,
+      22,
+      0,
+      "STRING"
+    ],
+    [
+      27,
+      20,
+      0,
+      23,
+      2,
+      "STRING"
+    ],
+    [
+      30,
+      11,
+      0,
+      24,
+      0,
+      "*"
+    ],
+    [
+      31,
+      13,
+      0,
+      24,
+      1,
+      "*"
+    ],
+    [
+      32,
+      14,
+      0,
+      24,
+      2,
+      "*"
+    ],
+    [
+      33,
+      15,
+      0,
+      24,
+      3,
+      "*"
+    ],
+    [
+      34,
+      16,
+      0,
+      24,
+      4,
+      "*"
+    ],
+    [
+      35,
+      11,
+      0,
+      25,
+      0,
+      "*"
+    ],
+    [
+      36,
+      13,
+      0,
+      25,
+      1,
+      "*"
+    ],
+    [
+      37,
+      14,
+      0,
+      25,
+      2,
+      "*"
+    ],
+    [
+      38,
+      15,
+      0,
+      25,
+      3,
+      "*"
+    ],
+    [
+      39,
+      16,
+      0,
+      25,
+      4,
+      "*"
+    ],
+    [
+      40,
+      22,
+      0,
+      23,
+      0,
+      "STRING"
+    ],
+    [
+      41,
+      21,
+      0,
+      23,
+      1,
+      "STRING"
+    ],
+    [
+      42,
+      18,
+      0,
+      23,
+      3,
+      "STRING"
+    ],
+    [
+      43,
+      11,
+      0,
+      23,
+      4,
+      "STRING"
+    ],
+    [
+      47,
+      23,
+      0,
+      29,
+      0,
+      "STRING"
+    ],
+    [
+      48,
+      29,
+      0,
+      26,
+      0,
+      "STRING"
+    ],
+    [
+      49,
+      29,
+      0,
+      6,
+      1,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "ArtGallery | Prompt Visualization【Zho】",
+      "bounding": [
+        365,
+        196,
+        1420,
+        2322
+      ],
+      "color": "#b06634",
+      "font_size": 80
+    }
+  ],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}
