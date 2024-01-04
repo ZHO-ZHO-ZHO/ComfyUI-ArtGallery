@@ -74,7 +74,7 @@ https://github.com/ZHO-ZHO-ZHO/ComfyUI-ArtGallery/assets/140084057/efc9dc4b-bafd
 
 ## 安装 | Install
 
-- 推荐使用 ComfyUI Manager 安装（Coming soon）
+- 推荐使用 ComfyUI Manager 安装
 
 - 手动安装：
     1. `cd custom_nodes`
