@@ -65,6 +65,28 @@ https://github.com/ZHO-ZHO-ZHO/ComfyUI-ArtGallery/assets/140084057/51fe3cfe-6b6c
 https://github.com/ZHO-ZHO-ZHO/ComfyUI-ArtGallery/assets/140084057/efc9dc4b-bafd-4aa2-af00-dcd745932201
 
 
+## 🆕 SD3 与 SDXL 的艺术表现力对比测试
+
+- 对比图（陆续上传）
+
+  ![SDXL SD3 对比排版 M-1-上传](https://github.com/ZHO-ZHO-ZHO/ComfyUI-ArtGallery/assets/140084057/3c34a00b-6410-4032-b3e8-1c5b9b3147ce)
+
+
+- 赞助者名单：
+  
+    - 刘白 | ￥2388
+    - Henry 马 | ￥900
+    - zengdamo | ￥800
+    - 一粒麦子 | credits 2557
+    - SD炼丹师忠忠 | ￥80
+    - 七点八分 | ￥75
+    - 断然龚 | ￥75
+      
+  感谢各位赞助者的赞助与支持！！！
+
+
+
+
 ## 自定义 | Customizations
 
 可将需要自定义增加的参考图内容放到 img_lists 中对应的文件夹里
@@ -93,6 +115,10 @@ https://github.com/ZHO-ZHO-ZHO/ComfyUI-ArtGallery/assets/140084057/efc9dc4b-bafd
 
 
 ## 更新日志
+
+- 20240505
+
+  SD3 与 SDXL 的艺术表现力对比测试图开始陆续更新，添加赞助者名单
 
 - 20240104
 
