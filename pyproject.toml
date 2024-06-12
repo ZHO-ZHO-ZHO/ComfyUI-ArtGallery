@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-artgallery"
+description = "Prompt Visualization | Art Gallery\n[w/WARN: Installation requires 2GB of space, and it will involve a long download time.]"
+version = "1.0.0"
+license = "LICENSE"
+
+[project.urls]
+Repository = "https://github.com/ZHO-ZHO-ZHO/ComfyUI-ArtGallery"
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-ArtGallery"
+Icon = ""
+Models = [{location = "/checkpoints/model.safetensor", model_url = "https://example.com/model.zip"}]
