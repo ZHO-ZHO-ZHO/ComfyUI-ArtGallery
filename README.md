@@ -65,6 +65,13 @@ https://github.com/ZHO-ZHO-ZHO/ComfyUI-ArtGallery/assets/140084057/51fe3cfe-6b6c
 https://github.com/ZHO-ZHO-ZHO/ComfyUI-ArtGallery/assets/140084057/efc9dc4b-bafd-4aa2-af00-dcd745932201
 
 
+## 🆕 SD3 艺术表现力
+
+- 272 位 艺术家
+
+![SD3艺术测试排版-艺术家-总-水印标题~1](https://github.com/ZHO-ZHO-ZHO/ComfyUI-ArtGallery/assets/140084057/fdc37d39-2880-4fa6-877d-3b4ed6f5c4a6)
+
+
 ## 🆕 SD3 与 SDXL 的艺术表现力对比测试
 
 - 对比图（陆续上传）
@@ -115,6 +122,10 @@ https://github.com/ZHO-ZHO-ZHO/ComfyUI-ArtGallery/assets/140084057/efc9dc4b-bafd
 
 
 ## 更新日志
+
+- 20240612
+
+  SD3 艺术表现力测试图开始陆续更新
 
 - 20240505
 
