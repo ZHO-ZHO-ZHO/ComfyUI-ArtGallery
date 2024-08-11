@@ -1,4 +1,5 @@
 import os
+import folder_paths
 
 #uploadimg
 def modify_js_file(file_path, new_content):
@@ -50,7 +51,7 @@ new_js_content = """
 
 # 文件路径
 current_dir = os.path.dirname(os.path.abspath(__file__))
-uploadimg_js_file_path = os.path.join(current_dir, '../../web/extensions/core/uploadImage.js')
+uploadimg_js_file_path = os.path.join(folder_paths.base_path, 'web/extensions/core/uploadImage.js')
 print(uploadimg_js_file_path)
 
 modify_js_file(uploadimg_js_file_path, new_js_content)
@@ -123,7 +124,7 @@ function_py_content = '''\
 
 # 文件路径
 
-py_file_path = os.path.join(current_dir, '../../folder_paths.py')
+py_file_path = os.path.join(folder_paths.base_path, 'folder_paths.py')
 
 modify_py_file(py_file_path, new_py_content, 'folder_names_and_paths["classifiers"]', function_py_content, 'def get_directory_by_type(type_name):')
 
@@ -251,7 +252,7 @@ new_wedgets_js_content_2 = """
 """
 
 # 文件路径
-wedgets_js_file_path = os.path.join(current_dir, '../../web/scripts/widgets.js')
+wedgets_js_file_path = os.path.join(folder_paths.base_path, 'web/scripts/widgets.js')
 
 modify_wedgets_js_file(wedgets_js_file_path, new_wedgets_js_content, new_wedgets_js_content_2)
 
